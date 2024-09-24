@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vw;
+    max-height: 20vh ;
+    background-color: #ececec
+}
+
+.abrir_menu, .navbar_cerrar{
+    display: block;
+    margin-right: 20px;
+    width: 6vw;
+    height: 4vh;
+    font-size: 20px;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+}
+
+.abrir_menu{
+    font-size: 25px;
+    color: #1c1c1c;
+}
+
+.navbar_cerrar{
+    color:#ececec
+}
+
+
+.logo{
+    max-width: 20vw ;
+    max-height: 16vh;
+}
+
+.Logo_nombre {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+
+.navbar{
+    opacity: 0;
+    visibility: hidden; 
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;         /* par que el background llegue abajo */
+    padding: 10vw;
+    background-color: #1c1c1c ;
+    box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);        /* Extiende toda la pantalla dejando el navb con mas imp */
+    gap: 3vh;
+}
+
+
+.navbar.visible{
+    opacity: 1;
+    visibility: visible ;
+}
+
+
+.navbar_list{
+    list-style-type: none; /* saca punto li */
+    display: flex;
+    flex-direction: column;
+  
+    gap: 4vw;
+    font-size: 20px;
+}
+
+
+.navbar_list a{
+    text-decoration: none ;  /* saca subrallado li */
+    color: white;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .abrir_menu{
+        display: none;
+    }
+
+    .navbar{
+        position: static;
+        padding: 0;
+        box-shadow: none; 
+        gap: 0;
+        background-color: transparent;
+        visibility: visible;
+    }
+
+    .navbar_list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navbar_list a{
+        text-decoration: none ;  /* saca subrallado li */
+        color: black;
+    }
+
+    .navbar_cerrar{
+        display: none;
+    }
+
+ 
+
+}
