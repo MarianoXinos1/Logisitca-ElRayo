@@ -327,7 +327,7 @@ main{
 }
 
 .depositos_titulo{
-    margin-left: 10px;
+    margin-left: 15px;
     margin-bottom: 20px;
 }
 
@@ -347,6 +347,39 @@ main{
 .bi-buildings{
     margin-right: 10px;
     
+}
+
+
+.contactanos{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contactanos_titulo{
+    margin: 0 15px 20px 15px;
+
+}
+
+.contactanos_consulta{
+   height: auto;
+   min-height: 100px;
+   text-align: left;
+
+
+}
+
+
+
+
+.contactanos_nombre,
+.contactanos_tel,
+.contactanos_email,
+.contactanos_consulta,
+.contactanos_boton{
+    font-size: 14px;
+    padding: 6px;
+    margin: 15px 15px 0 15px;
 }
 
 
