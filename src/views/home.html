@@ -16,7 +16,9 @@
     <header>
         <section class="nabvar">
             <div class="nabvar_logo_nombre"> 
-                <img class="logo"  src="/imagenes/Logo.png" alt="Logo Logistica El Rayo"> 
+                <a href="#inicio">
+                    <img class="logo" src="/imagenes/Logo.png" alt="Logo Logistica El Rayo">
+                </a> 
                 <p>Logistica El Rayo</p>
             </div>
 
@@ -24,11 +26,12 @@
 
             <nav class="navbar_elementos visible" id="nav">
                     <button class="navbar_cerrar" id="cerrar"> <i class="bi bi-x-lg"></i> </button>
-                    <ul class="navbar_elementos-li">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Empresa</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Contacto</a></li>
+                    <ul class="navbar_elementos-li">  
+                        <!-- el # es para indicarle al href que esta en la misma pagina (si no da error)-->                          
+                        <li><a href="#empresa">Empresa</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#depositos">Depositios</a></li>
+                        <li><a href="#contactForm">Contactanos</a></li>
                     </ul>
             </nav>
         </section>
@@ -43,7 +46,7 @@
     
     <main>
         <section>       
-            <h2 class=" empresa_titulo"> Conoce nuestra compañia</h2>
+            <h2 class=" empresa_titulo" id="empresa"> Conoce nuestra compañia</h2>
             <article class="empresa">
                 <p class="empresa_descripcion">Somos una empresa de logística con sede en Buenos Aires, Rosario, Córdoba, Catamarca y La Rioja. Ofrecemos transporte de carga completa o fraccionada, control de stock, almacenamiento y entregas a destino, con envíos contra reembolso. Nos especializamos en brindar asesoramiento personalizado, optimizando el manejo de mercancías y garantizando un servicio de calidad adaptado a cada cliente.</p>
 
@@ -54,7 +57,7 @@
 
         <section>
             <article class="servicios">
-                <h2 class="servicios_titulo">Servicios</h2>
+                <h2 class="servicios_titulo" id="servicios">Servicios</h2>
                 <div class="servicios_card">
                     <img  src="/imagenes/s2.jpg" alt="imagen camiones">
                     <h3>Transporte Nacional Terrestre</h3>
@@ -69,7 +72,7 @@
 
                 <div class="servicios_card">                       
                     <img  src="/imagenes/s4.jpg" alt="imagen camiones">
-                    <h3>Depositos Eficientes</h3>
+                    <h3>Depósitos Eficientes</h3>
                     <p>Servicios de depósito, gestión de stock, logística y distribución para garantizar que tus productos estén siempre disponibles y listos para ser enviados. Nuestro sistema de almacenamiento está diseñado para asegurar un control eficiente de inventarios, evitando faltantes y optimizando el manejo de mercancías.</p>
                 </div>
 
@@ -96,7 +99,7 @@
             </div>   
         </section>
 
-        <section class="depositos">
+        <section class="depositos" id="depositos">
             <h2 class="depositos_titulo">Depósitos</h2>
             <article class="depositos_ubi">
                 <h3 class="depositos_ubi-titulo"> Depósito Buenos Aires</h3>
