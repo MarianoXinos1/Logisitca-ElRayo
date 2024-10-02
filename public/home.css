@@ -8,7 +8,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;  
-    margin-top: 80px;  /* fixed del nabvar tenga espacio y no tape el banner */
+    margin-top: 70px;  /* fixed del nabvar tenga espacio y no tape el banner */
 }
 
 main{
@@ -23,14 +23,18 @@ main{
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    height: 6%;
     z-index: 100;
     padding: 4vw;
     background-color: #BABFC0;
 
     position: fixed;
     top:0;
-    z-index: 1000;
-  
+
+    background: rgba(14, 29, 52, 0.9);
+    box-shadow: 0px 2px 20px rgba(14, 29, 52, 0.1);
+    color:white;
+    
 }
 
 .img{
@@ -44,13 +48,14 @@ main{
 
 .img_banner{
     width: 100%;
-    height: auto;
+    height: 40vh;
+    object-fit:cover
 }
 
 .boton_banner{
     position: absolute;
     bottom: 20px;
-    right: 36px;
+    right: 20px;
     
     color: white;
     border-radius: 20px;
@@ -72,7 +77,6 @@ main{
     box-shadow: 2px 5px 0 0 black;
   }
   
-
 
 
 /* No se porque si no pongo ambos no funciona */
@@ -113,14 +117,18 @@ main{
 
 
 .logo{
-    max-width: 20vw ;
-    max-height: 16vh;
+    max-width: 65px;
+    height: auto;
+    display: block;  /* Sin el block,  tiene un espacio en blanco adicional debajo reservado para caracteres descendentes en texto y hacia que estuviera mas arriba */
 }
 
 .nabvar_logo_nombre {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    font-size: 18px ;  
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 
@@ -156,6 +164,9 @@ main{
   
     gap: 4vw;
     font-size: 20px;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -173,33 +184,60 @@ main{
     display: flex;
     flex-direction: column;
     position: relative;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
    
 }
 
-.empresa_titulo{
-    margin: 50px 0 10px 10px;
+.empresa_info-titulo{
+    margin: 10px 0 5px 15px;
     text-align: left;
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
 }
 
-.empresa_descripcion{
+
+.empresa_info-descripcion{
     text-align: left;        
-    font-size: 14px;
-    margin: 0 10px 10px 10px;
+    font-size: 18px;
+    margin: 0 15px 10px 15px;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
-.empresa_img{
+.empresa_info-descripcion-iconoTexto {  
+    display: flex;
+    align-items: flex-start; 
+    gap: 15px;
+    margin: 20px 15px;     
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.empresa_descripcion-icono{
+    font-size: 20px;
+}
+
+
+
+
+.empresa_div-img{
     width: 100vw;
-    height: auto;
+    height: 40vh; 
+    object-fit: cover;  /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+    object-position: top;
   
 }
 
 
-.empresa_texto-img {
+.empresa_div-img-boton {
     position: absolute;
     bottom: 20px;
-    right: 30px;
+    right: 20px;
     
     color: black;
     border-radius: 20px;
@@ -374,7 +412,6 @@ main{
    min-height: 100px;
    text-align: left;
 
-
 }
 
 
@@ -420,7 +457,136 @@ footer p{
 
 
 
-@media screen and (min-width: 768px) {
+
+
+@media screen and (min-width: 1024px) {
+
+
+    .nabvar{
+        height: 8%;
+        padding: 0 80px;
+    }
+
+
+    .logo{
+        max-width: 90px;     
+    }
+
+    
+    .img_banner{
+        width: 100%;
+        height: auto;
+       
+    }
+
+    .boton_banner{
+        right: 65px;
+    }
+
+    .nabvar_logo_nombre {
+        font-size: 22px ; 
+    }
+
+    .navbar_elementos-li a{
+        text-decoration: none ;  /* saca subrallado li */
+        color: white;
+    }
+
+
+
+
+    
+    .empresa{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+
+    .empresa_info {     
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+ 
+
+    .empresa_info-titulo{
+        margin: 20px 0 5px 50px;
+    }
+
+    .empresa_info-descripcion {
+        width: 90%;
+        margin: 0 0 10px 50px;
+    }
+
+    .empresa_info-descripcion-iconoTexto {  
+        display: flex;
+        align-items: center; 
+        width: 90%;
+        gap: 20px;
+        margin-left: 50px;
+        margin-top: 20px;     
+        font-family: "Crimson Text", serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .empresa_info-descripcion-iconoTexto span {  
+        font-size: 16px;
+    }
+
+    .empresa_descripcion-icono{
+        font-size: 30px;
+        vertical-align: middle; /*alinear icono con el texto */
+    }
+
+
+    
+    .empresa_div {
+        width: 50%;
+        height: auto; /* si pongo 100 se achica el hijo */
+        display: flex;
+        flex-direction: column;
+        margin: 20px 50px 0 10px;
+       
+    }
+    
+    .empresa_div-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;  
+        object-position: top; /* Elegir qué parte del cover quieres que se vea de la imagen */
+    }
+    
+    
+   
+    .empresa_div-img-boton {
+        bottom: 10px;
+        right: 65px;    
+        padding: 1vh 1.2vw;
+    }
+
+
+
+
+
+
+    .servicios_titulo{
+        margin: 20px 0 10px 50px;
+        text-align: center;
+        font-size: 30px;
+        font-family: "Crimson Text", serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    
+
+
+
+
+
 
     .nabvar_abrir-menu{
         display: none;
@@ -441,15 +607,18 @@ footer p{
         justify-content: space-around;
     }
 
-    .navbar_elementos-li a{
-        text-decoration: none ;  /* saca subrallado li */
-        color: black;
-    }
+    
 
     .navbar_cerrar{
         display: none;
     }
 
- 
+    
+    
+
+
+
 
 }
+
+
