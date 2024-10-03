@@ -31,7 +31,7 @@ main{
     position: fixed;
     top:0;
 
-    background: rgba(14, 29, 52, 0.9);
+    background: rgba(36, 68, 116, 0.9);
     box-shadow: 0px 2px 20px rgba(14, 29, 52, 0.1);
     color:white;
     
@@ -286,9 +286,12 @@ main{
 
 .servicios_card h3{
     padding-bottom: 6px;
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
-.servicios_card img{
+.servicios_card-img{
     margin-bottom: 12px;
     width: 100%;
     height: auto;
@@ -297,6 +300,9 @@ main{
 
 .servicios_card p{
     text-align: center;
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -456,7 +462,72 @@ footer p{
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
 
+       
+    .empresa{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: calc(100% - 150px);
+        margin: 0 auto;
+    }
+
+    .empresa_div-img{
+        width: 100%;
+        height: auto; 
+        object-fit: cover;  /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+        object-position: top;
+      
+    }
+
+    .empresa_info-descripcion {
+        font-size: 20px;
+    }
+
+    .empresa_info-descripcion-iconoTexto span {  
+        font-size: 18px;
+    }
+
+    .empresa_descripcion-icono{
+        font-size: 30px;
+    }
+
+ 
+
+    
+
+    .servicios_contenedor{
+        background-color: #f7f7f9;
+    }
+
+    .servicios{
+        display: flex;
+        flex-direction: column;
+      
+        height: 100%;
+        width: 100%;
+        width: calc(100% - 150px);
+        margin: 0 auto;
+    }
+
+    .servicios_titulo{ 
+        font-size: 30px;
+        padding: 15px 0;
+     }
+
+
+     .servicios_titulo{
+        font-size: 30px;
+     }
+
+
+     .servicios_card-img-texto{
+        font-size: 20px;
+    }
+
+     
+}
 
 
 @media screen and (min-width: 1024px) {
@@ -500,7 +571,8 @@ footer p{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        
+        width: calc(100% - 100px);
+        margin: 0 auto;
     }
 
 
@@ -508,9 +580,9 @@ footer p{
         display: flex;
         flex-direction: column;
         width: 50%;
+        margin-right: 20px;
     }
 
- 
 
     .empresa_info-titulo{
         margin: 20px 0 5px 50px;
@@ -519,6 +591,7 @@ footer p{
     .empresa_info-descripcion {
         width: 90%;
         margin: 0 0 10px 50px;
+        font-size: 18px;
     }
 
     .empresa_info-descripcion-iconoTexto {  
@@ -529,7 +602,7 @@ footer p{
         margin-left: 50px;
         margin-top: 20px;     
         font-family: "Crimson Text", serif;
-        font-weight: 600;
+        font-weight: 400;
         font-style: normal;
     }
 
@@ -555,15 +628,15 @@ footer p{
     
     .empresa_div-img {
         width: 100%;
-        height: 100%;
+        height: 95%;
         object-fit: cover;  
-        object-position: top; /* Elegir qué parte del cover quieres que se vea de la imagen */
+        object-position: left top; /* Elegir qué parte del cover quieres que se vea de la imagen */
     }
     
     
    
     .empresa_div-img-boton {
-        bottom: 10px;
+        bottom: 40px;
         right: 65px;    
         padding: 1vh 1.2vw;
     }
@@ -573,8 +646,14 @@ footer p{
 
 
 
+
+
+    .servicios_contenedor{
+        background-color: #f7f7f9;
+    }
+    
     .servicios_titulo{
-        margin: 20px 0 10px 50px;
+       padding: 20px 0;
         text-align: center;
         font-size: 30px;
         font-family: "Crimson Text", serif;
@@ -582,7 +661,53 @@ footer p{
         font-style: normal;
     }
     
+    .servicios{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;  /* hace que se estire el hijo y ocupe todo contenedor */
+      
+        
+        height: 100%;
+        width: 100%;
+        width: calc(100% - 150px);
+        margin: 0 auto;
 
+    }
+    
+    .servicios_card{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0px 0px 40px 0px;
+        background-color: #f7f7f9;
+        width: 45%;
+        height: auto;
+        border: 1px solid #dee2e6;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+    }
+
+    .servicios_card-img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;  
+        object-position: top; /* Elegir qué parte del cover quieres que se vea de la imagen */
+    }
+
+
+    .servicios_card-img-texto{
+        padding: 0 10px;
+        width: 100%;
+        font-size: 18px;
+        font-family: "Crimson Text", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+
+    
 
 
 
