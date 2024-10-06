@@ -8,6 +8,8 @@ html{
     scroll-padding-top: 50px; /* agrega espacio para asegurar que el contenido anclado no quede oculto detrás del header fijo */
 }
 
+
+
 header{
     display: flex;
     flex-direction: column;
@@ -38,8 +40,8 @@ main{
     background: rgba(36, 68, 116, 0.9);
     box-shadow: 0px 2px 20px rgba(14, 29, 52, 0.1);
     color:white;
-    
 }
+
 
 .img{
     position: relative;
@@ -151,7 +153,6 @@ main{
     background-color: #1c1c1c ;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);       /* Extiende toda la pantalla dejando el navb con mas imp */
     gap: 3vh;
-
     z-index: 2000;
 }
 
@@ -213,6 +214,7 @@ main{
 
 }
 
+
 .empresa_info-descripcion-iconoTexto {  
     display: flex;
     align-items: flex-start; 
@@ -231,7 +233,7 @@ main{
 
 
 .empresa_div-img{
-    width: 100vw;
+    width: 100%;
     height: 30vh; 
     object-fit: cover;  /* Asegura que la imagen cubra el contenedor sin distorsionarse */
     object-position: top;
@@ -262,7 +264,6 @@ main{
 
 
 
-
 .servicios_contenedor{
     background-color: #f7f7f9;
     padding-bottom: 10px;
@@ -282,17 +283,6 @@ main{
     font-size: 28px;
 }
 
-.servicios_subtitulo{
-    font-family: "Crimson Text", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    text-align: left;
-    padding: 0 10px;
-     /*color: #636466 */
-}
-
-
 
 .servicios_card{
     display: flex;
@@ -308,7 +298,7 @@ main{
     font-weight: 600;
     font-style: normal;
     text-align: left;
-    padding: 0 10px;
+    padding: 0 10px 5px 10px;
 }
 
 .servicios_card-img{
@@ -327,9 +317,6 @@ main{
     padding: 0 10px;
 
 }
-
-
-
 
 
 
@@ -419,7 +406,7 @@ main{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .depositos_titulo{
@@ -440,7 +427,6 @@ main{
     font-weight: 600;
     font-style: normal;
     font-size: 20px;
-
 }
 
 .depositos_ubi-info{
@@ -457,10 +443,12 @@ main{
 }
 
 
+
+
+
 .contactanos{
     display: flex;
     flex-direction: column;
-
 }
 
 .contactanos_titulo{
@@ -484,8 +472,8 @@ main{
     font-family: "Crimson Text", serif;
     font-weight:400;
     font-style: normal;
-    font-size: 16px
- 
+    font-size: 16px;
+    border: 1px solid #aaaaad;
 }
 
 
@@ -495,6 +483,9 @@ main{
     text-align: left;
  
  }
+
+
+ 
 
 
 .footer{
@@ -507,30 +498,31 @@ main{
     width: 100%;
     color:white;
     text-align: center;
+    height: 220px;
 }
 
 
 .footer_info-logo{
-    max-width: 32% ;
-    max-height: 22%;
-    margin-top: 10px;
+    max-width: 50% ;
+    max-height: 50%;
+  
 }
 
 
 footer p{
-    margin-bottom: 20px ;
+    margin-bottom: 15px ;
     font-family: "Crimson Text", serif;
     font-weight:400;
     font-style: normal;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .footer_info-iconos{
-    margin-bottom: 20px ;
+    margin-bottom: 15px ;
 }
 
 .social-icon {
-    font-size: 30px; 
+    font-size: 24px; 
     margin: 0 10px 20px 10px;
   
 }
@@ -545,10 +537,37 @@ footer p{
 }
 
 
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
+    .navbar_elementos-li{
+        font-size: 22px;
+        gap: 3vw;
+    }
 
+    .navbar_elementos{
+        padding: 8%;
+    }
     
+    .boton_banner{
+        bottom: 14px;
+        right: 18px;
+        border-radius: 60px;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 0.8vh 1vw;
+        width: 150px;
+    }
+        
+    .logo{
+        max-width: 90px;
+    }
+
+    .nabvar_logo_nombre {
+        font-size: 22px ;  
+    }
+
+
 
        
     .empresa{
@@ -559,29 +578,47 @@ footer p{
         margin: 0 auto;
     }
 
+    .empresa_info-titulo{
+        font-size: 30px;
+    }
+
+
+    .empresa_info-descripcion {
+        font-size: 22px;
+    }
+
     .empresa_div-img{
         width: 100%;
         height: auto; 
-        object-fit: cover;  /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+        object-fit: cover;  
         object-position: top;
-      
     }
-
-    .empresa_info-descripcion {
+  
+    .empresa_info-descripcion-iconoTexto span {  
         font-size: 20px;
     }
 
-    .empresa_info-descripcion-iconoTexto span {  
-        font-size: 18px;
-    }
 
     .empresa_descripcion-icono{
         font-size: 30px;
     }
 
+    .empresa_div-img{
+        width: 100%;
+        height: 25vh; 
+        object-fit: cover;  
+        object-position: top;
+      
+    }
+
+    .empresa_div-img-boton {
+        font-size: 12px;
+        width: 160px;
+    }
+
  
 
-    
+
 
     .servicios_contenedor{
         background-color: #f7f7f9;
@@ -597,23 +634,94 @@ footer p{
         margin: 0 auto;
     }
 
-    .servicios_titulo{ 
-        font-size: 30px;
-        padding: 15px 0;
-     }
-
-
      .servicios_titulo{
         font-size: 30px;
+        margin-top: 30px ;
+        padding: 30px 0 5px 0;
      }
 
 
+     .servicios_card h3{
+        font-size: 24px;
+        padding: 0 10px 5px 10px;
+    }
+    
      .servicios_card-img-texto{
         font-size: 20px;
     }
 
+
+
+
+    .img_camion-titulo,
+    .img_camion-texto{
+        position: absolute;
+        left: 5%;
+        top: 15%;
+        color: black;
+        font-size: 24px;
+        padding: 10px;
+        font-family: "Crimson Text", serif;
+        font-weight: 700;
+        font-style: normal;
+        text-align: left;
+    }
+
+    .img_camion-texto{
+        top: 28%;
+        left: 5%;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .img_camion-boton{
+        top: 44%; 
+    }
+    
+
+
+    .depositos{
+        padding: 0 15px;
+    }
+    
+    .depositos_titulo{
+        font-size: 30px;
+    }
+
+    .depositos_ubi-titulo{
+        font-size: 20px;
+    }
+
+    .depositos_ubi-info{
+        font-size: 18px
+    }
+
+
+
+
+    .contactanos_titulo{
+        font-size: 30px;
+        margin: 10px 15px 0px 15px;
+    }
+
+    .contactanos_nombre,
+    .contactanos_tel,
+    .contactanos_email,
+    .contactanos_consulta,
+    .contactanos_boton{
+        padding: 6px;
+        margin: 15px 25px 0 25px;
+        font-family: "Crimson Text", serif;
+        font-weight:400;
+        font-style: normal;
+        font-size: 18px
+ 
+    }
+
      
 }
+
+
 
 
 @media screen and (min-width: 1024px) {
