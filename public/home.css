@@ -103,7 +103,7 @@ main, footer{
 .nabvar_abrir-menu, .navbar_cerrar{
     display: block;
     margin-right: 20px;
-    width: 8vw;
+    width: 9vw;
     height: 4vh;
     font-size: 20px;
     border: 0;
@@ -445,8 +445,29 @@ main, footer{
 }
 
 .contactanos_boton{
-    width: 18%;
+  width: 22%;
+  position: relative;
+  font-size: 12px;
+  border: none;
+  padding: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.2s;
+  border-radius: 5px;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  box-shadow: #c0392b 0px 7px 2px, #000 0px 8px 5px;
 }
+
+.contactanos_boton:hover {
+    opacity: 1;
+ }
+
+.contactanos_boton:active {
+    top: 4px;
+    box-shadow: #c0392b 0px 3px 2px,#000 0px 3px 5px; /* simula el presionado */
+}
+
 
 
 
@@ -501,7 +522,7 @@ main, footer{
 }
 
 .footer_empresa p{
-    font-size: 16px;
+    font-size: 15px;
     font-family: "Crimson Text", serif;
     font-weight:400;
     font-style: normal;
@@ -512,7 +533,7 @@ main, footer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 .footer_depositos h3{
@@ -629,6 +650,12 @@ main, footer{
 
     .nabvar_logo_nombre {
         font-size: 22px ;  
+    }
+
+
+    .nabvar_abrir-menu, .navbar_cerrar{
+        width: 6vw;
+        height: 4vh;  
     }
 
 
@@ -1095,6 +1122,11 @@ main, footer{
     .contactanos_titulo{
         font-size: 30px
     }
+
+    .contactanos_boton{
+        width: 16%;
+        font-size: 16px;
+      }
 
 
 
