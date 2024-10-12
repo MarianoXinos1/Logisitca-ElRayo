@@ -124,7 +124,7 @@ main, footer{
 
 
 .logo{
-    max-width: 58px;
+    max-width: 64px;
     height: auto;
     display: block;  /* Sin el block,  tiene un espacio en blanco adicional debajo reservado para caracteres descendentes en texto y hacia que estuviera mas arriba */
 }
@@ -645,7 +645,7 @@ main, footer{
     }
         
     .logo{
-        max-width: 90px;
+        max-width: 78px;
     }
 
     .nabvar_logo_nombre {
@@ -854,7 +854,7 @@ main, footer{
     }
 
     .logo{
-        max-width: 78px;    
+        max-width: 74px;    
     }
     
     .img_banner{
@@ -972,9 +972,9 @@ main, footer{
     }
     
     .empresa_div-img-boton {
-        bottom: 40px;
+        bottom: 35px;
         right: 10px;    
-        padding: 1vh 1.2vw;
+        padding: 0.8vh 1vw;
         width: 200px;
         font-size: 14px;
     }
