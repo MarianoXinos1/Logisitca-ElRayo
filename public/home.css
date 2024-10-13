@@ -29,7 +29,7 @@ main, footer{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 7%;
+    height: 55px;
     z-index: 101; /* afecta tamb al menu hamburguesa */
     padding: 4vw;
     background-color: #BABFC0;
@@ -451,7 +451,7 @@ main, footer{
   font-size: 12px;
   border: 1px solid #dee2e6;
   padding: 1em;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   transition: 0.2s;
   border-radius: 5px;
@@ -460,6 +460,7 @@ main, footer{
   background-color: white;
   box-shadow: #c0392b 0px 7px 2px, #000 0px 8px 5px;
   color:black;
+  -webkit-font-smoothing: antialiased; /*  mejora el suavizado de fuentes en Safari */
 }
 
 .contactanos_boton:hover {
