@@ -29,7 +29,7 @@ main, footer{
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 6%;
+    height: 6.5%;
     z-index: 101; /* afecta tamb al menu hamburguesa */
     padding: 4vw;
     background-color: #BABFC0;
@@ -124,7 +124,7 @@ main, footer{
 
 
 .logo{
-    max-width: 64px;
+    max-width: 66px;
     height: auto;
     display: block;  /* Sin el block,  tiene un espacio en blanco adicional debajo reservado para caracteres descendentes en texto y hacia que estuviera mas arriba */
 }
@@ -381,7 +381,7 @@ main, footer{
     border: 2px solid black;
     box-shadow: 0 0 0 0 black;
     transition: all 0.3s ease-in-out;
-    width: 130px;
+    width: 120px;
 }
 
 .img_camion-boton:hover{
@@ -448,7 +448,7 @@ main, footer{
   width: 22%;
   position: relative;
   font-size: 12px;
-  border: none;
+  border: 1px solid #dee2e6;
   padding: 1em;
   font-weight: bold;
   text-transform: uppercase;
@@ -456,6 +456,7 @@ main, footer{
   border-radius: 5px;
   opacity: 0.8;
   letter-spacing: 1px;
+  background-color: white;
   box-shadow: #c0392b 0px 7px 2px, #000 0px 8px 5px;
 }
 
@@ -492,7 +493,7 @@ main, footer{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin-top: 40px ;
+    margin-top: 60px ;
     background-color:#4163A2;
     width: 100%;
     height: 100%;
@@ -624,6 +625,7 @@ main, footer{
 
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+    
 
     .navbar_elementos-li{
         font-size: 22px;
@@ -849,12 +851,12 @@ main, footer{
 
 
     .nabvar{
-        height: 8%;
+        height: 7.5%;
         padding: 0 80px;
     }
 
     .logo{
-        max-width: 74px;    
+        max-width: 70px;    
     }
     
     .img_banner{
@@ -885,6 +887,7 @@ main, footer{
     }
 
     .navbar_elementos{
+        opacity: 1;    /* para que se vea porque clase visible esta en etiqueta ul */
         position: static;
         padding: 0;
         box-shadow: none; 

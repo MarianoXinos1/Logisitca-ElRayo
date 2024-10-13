@@ -8,10 +8,13 @@ app.use(express.static(publicPath));
 
 
 //Config Puerto
-const PORT = 3030;
+const PORT = 3040;
 app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
 
 
 //Config rutas
 const homeRoutes = require('../routes/home.routes');
 app.use('/', homeRoutes);
+
+
+module.exports = app; // Exporta la aplicación para que Vercel pueda usarla
