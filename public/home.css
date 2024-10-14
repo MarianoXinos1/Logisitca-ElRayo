@@ -64,16 +64,17 @@ main, footer{
     bottom: 12px;
     right: 14px;
     
-    border-radius: 60px;
+    
     font-size: 12px;
     font-weight: 600;
     padding: 0.8vh 1vw;
     cursor: pointer;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.925);
     border: 2px solid black;
-    box-shadow: 0 0 0 0 black;
+    border-radius: 60px;
+    box-shadow: 0 0 0 0 white;
     transition: all 0.3s ease-in-out;
-    width: 130px;
+    width: 150px;
     text-align: center;
 
 }
@@ -95,8 +96,12 @@ main, footer{
 
 .boton_banner-texto {
     color: black;
-    text-decoration: none;
-
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 4px; 
+    text-decoration: none; 
+    color: inherit; 
 }
 
 
@@ -106,20 +111,21 @@ main, footer{
     width: 9vw;
     height: 4vh;
     font-size: 20px;
-    border: 0;
     background-color:#4163A2;
-    color:white;
+    color:#f7f7f9;
     cursor: pointer;
     border-radius: 10px;
+    border: 1px solid #f7f7f9af;
 }
 
 .nabvar_abrir-menu{
     font-size: 25px;
-    color: white;
+    color: #f7f7f9;
 }
 
 .navbar_cerrar{
-    color:#ececec
+    color:#f7f7f9;
+    border: 1px solid #f7f7f9af;
 }
 
 
@@ -246,19 +252,24 @@ main, footer{
 
 
 .empresa_div-img-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
     position: absolute;
     bottom: 15px;
     right: 15px;
     
     border-radius: 60px;
-    font-size: 10px;
+    font-size: 11px;
     font-weight: 600;
-    padding: 0.9vh 1vw;
-    background-color: white;
+    padding: 0.8vh 1vw;
+    background-color: rgba(255, 255, 255, 0.925);
     border: 2px solid black;
     box-shadow: 0 0 0 0 black;
     transition: all 0.3s ease-in-out;
-    width: 140px;
+    width: 150px;
     text-align: center;
 }
     
@@ -378,7 +389,7 @@ main, footer{
     font-weight: 600;
     padding: 0.8vh 1vw;
     cursor: pointer;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.925);
     border: 2px solid black;
     box-shadow: 0 0 0 0 black;
     transition: all 0.3s ease-in-out;
@@ -553,7 +564,7 @@ main, footer{
     list-style-type: none ; 
     font-size: 16px;
     font-family: "Crimson Text", serif;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
  }
 
@@ -563,6 +574,8 @@ main, footer{
 
 .footer_depositos-li-telefono{
     margin-left: 5px;
+    color:white;
+    font-weight: 400;
 }
 
 
@@ -646,7 +659,7 @@ main, footer{
         font-size: 14px;
         font-weight: 600;
         padding: 0.8vh 1vw;
-        width: 150px;
+        width: 170px;
     }
         
     .logo{
@@ -709,7 +722,7 @@ main, footer{
 
     .empresa_div-img-boton {
         font-size: 12px;
-        width: 160px;
+        width: 165px;
     }
 
  
@@ -825,7 +838,7 @@ main, footer{
 
     .footer_depositos-li{
        font-size: 18px;
-       font-weight: 400;  
+ 
     }
 
     .footer_info-iconos p{
@@ -854,7 +867,7 @@ main, footer{
 
 
     .nabvar{
-        height: 7.5%;
+        height: 7%;
         padding: 0 80px;
     }
 
@@ -872,7 +885,7 @@ main, footer{
     .boton_banner{
         bottom: 15px;
         right: 30px;
-        width: 170px;
+        width: 185px;
         font-size: 14px;
     }
 
@@ -980,9 +993,10 @@ main, footer{
     .empresa_div-img-boton {
         bottom: 35px;
         right: 10px;    
-        padding: 0.8vh 1vw;
-        width: 200px;
+        padding: 0.9vh 0.8vw;
+        width: 190px;
         font-size: 14px;
+
     }
 
 
@@ -1097,24 +1111,11 @@ main, footer{
         border-radius: 60px;
         font-size: 14px;
         font-weight: 600;
-        padding: 1vh 2vw;
-        cursor: pointer;
-        background-color: white;
-        border: 2px solid black;
-        box-shadow: 0 0 0 0 black;
-        transition: all 0.3s ease-in-out;
-        width: 170px;
+        padding: 1vh 1vw;
+        width: 140px;
     }
 
-    .img_camion-boton:hover{
-        transform: translateY(-4px) translateX(-2px);
-        box-shadow: 2px 5px 0 0 black;
-    }
 
-    .img_camion-boton-1{
-        color: black;
-        text-decoration: none;
-    }
 
 
 
@@ -1198,8 +1199,7 @@ main, footer{
     }
 
     .footer_depositos-li{
-       font-size: 18px;
-       font-weight: 400;  
+       font-size: 18px;;  
     }
     
 
