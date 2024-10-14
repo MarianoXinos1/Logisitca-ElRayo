@@ -62,7 +62,7 @@ main, footer{
 .boton_banner{
     position: absolute;
     bottom: 12px;
-    right: 14px;
+    right: 8px;
     
     
     font-size: 12px;
@@ -259,17 +259,17 @@ main, footer{
 
     position: absolute;
     bottom: 15px;
-    right: 15px;
+    right: 8px;
     
     border-radius: 60px;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
     padding: 0.8vh 1vw;
     background-color: rgba(255, 255, 255, 0.925);
     border: 2px solid black;
     box-shadow: 0 0 0 0 black;
     transition: all 0.3s ease-in-out;
-    width: 150px;
+    width: 165px;
     text-align: center;
 }
     
@@ -576,6 +576,8 @@ main, footer{
     margin-left: 5px;
     color:white;
     font-weight: 400;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 
